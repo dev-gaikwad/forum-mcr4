@@ -1,0 +1,13 @@
+.container {
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  background-color: white;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.container h3 {
+  margin: 0;
+  padding: 0.5rem;
+}

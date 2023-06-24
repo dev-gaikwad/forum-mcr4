@@ -1,9 +1,13 @@
 import React from 'react';
 
-import './Titlebar.module.css';
+import styles from './Titlebar.module.css';
 
 const Titlebar = () => {
-  return <div>Titlebar</div>;
+  return (
+    <div className={styles.container}>
+      <h3>Forum App</h3>
+    </div>
+  );
 };
 
 export default Titlebar;
