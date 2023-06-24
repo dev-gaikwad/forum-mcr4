@@ -45,7 +45,8 @@ export const ForumContextProvider = ({ children }) => {
       (post) => post.postId === postId
     );
     if (postIndex !== -1) {
-      updatedData.posts[postIndex].isBookmarked = true;
+      updatedData.posts[postIndex].isBookmarked =
+        !updatedData.posts[postIndex].isBookmarked;
 
       setForumData(updatedData);
     }

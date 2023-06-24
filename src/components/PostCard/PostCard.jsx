@@ -25,6 +25,7 @@ const PostCard = ({ postData }) => {
     tags,
     createdAt,
     comments,
+    isBookmarked,
   } = postData;
 
   const forum = useForum();
@@ -73,9 +74,7 @@ const PostCard = ({ postData }) => {
           </div>
           <MdShare />
           <div
-            className={
-              forum?.forumData?.isBookmarked === true && styles.bookmarked
-            }
+            className={isBookmarked && styles.bookmarked}
             onClick={() => forum.bookmark(postId)}
           >
             <MdBookmark />
