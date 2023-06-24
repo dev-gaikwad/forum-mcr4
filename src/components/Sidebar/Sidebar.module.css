@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.navPill {
+  padding: 0.5rem;
+}
+
+.navPill:hover {
+  background-color: var(--light-primary);
+  cursor: pointer;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.navPill div {
+  font-weight: bold;
+  color: var(--primary-color);
+}

@@ -1,0 +1,26 @@
+.cardContainer {
+  width: 100%;
+  background-color: white;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.avatarContainer {
+  font-size: 1.5rem;
+}
+
+.commentHeader {
+  color: var(--primary-color);
+}
+
+.avatarContainer {
+  width: 2rem;
+}
+
+.avatarContainer img {
+  width: 100%;
+  object-fit: contain;
+}

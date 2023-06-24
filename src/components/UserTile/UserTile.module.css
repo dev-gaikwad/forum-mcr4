@@ -1,0 +1,30 @@
+.tileContainer {
+  padding: 01rem 0.25rem;
+  margin-left: 1rem;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatarContainer {
+  width: 2rem;
+}
+
+.avatarContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.tileContent {
+  margin: 0;
+}
+
+.tileContent p {
+  margin: 0.25rem;
+}
+
+.tileContent small {
+  margin: 0;
+  color: var(--primary-color);
+}

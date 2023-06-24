@@ -1,0 +1,80 @@
+.cardContainer {
+  background-color: white;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.voteButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.svgBtn {
+  cursor: pointer;
+}
+.postHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.avatarContainer {
+  width: 2rem;
+}
+
+.avatarContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.postHeader p {
+  font-size: 0.75rem;
+  margin: 0.25rem;
+}
+
+.postHeader p span {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.postTitle h3 {
+  color: black;
+  margin: 0.25rem;
+}
+
+.postTagsContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.postTag {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: var(--light-primary);
+}
+
+.postContent p {
+  margin: 0.5rem 0rem 1rem 0rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid lightgrey;
+}
+
+.postButtonsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
