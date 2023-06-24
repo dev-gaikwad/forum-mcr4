@@ -72,7 +72,14 @@ const PostCard = ({ postData }) => {
             <MdChatBubble />
           </div>
           <MdShare />
-          <MdBookmark />
+          <div
+            className={
+              forum?.forumData?.isBookmarked === true && styles.bookmarked
+            }
+            onClick={() => forum.bookmark(postId)}
+          >
+            <MdBookmark />
+          </div>
         </div>
       </div>
     </div>

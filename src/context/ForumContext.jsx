@@ -37,9 +37,22 @@ export const ForumContextProvider = ({ children }) => {
   const sortBy = (value) => {
     console.log(value);
   };
+
+  const bookmark = (postId) => {
+    const updatedData = { ...forumData };
+
+    const postIndex = updatedData.posts.findIndex(
+      (post) => post.postId === postId
+    );
+    if (postIndex !== -1) {
+      updatedData.posts[postIndex].isBookmarked = true;
+
+      setForumData(updatedData);
+    }
+  };
   return (
     <ForumContext.Provider
-      value={{ forumData, upvotePost, downvotePost, sortBy }}
+      value={{ forumData, upvotePost, downvotePost, sortBy, bookmark }}
     >
       {children}
     </ForumContext.Provider>

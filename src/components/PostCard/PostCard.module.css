@@ -78,3 +78,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.bookmarked {
+  color: var(--primary-color);
+}
